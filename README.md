@@ -36,9 +36,12 @@
  ![주문정보](https://user-images.githubusercontent.com/105857882/219085248-a20c38bd-1139-4b59-9b1a-18c7803bcba0.PNG)
  
 # 2. CQRS
-
+ 주문상태가 주문됨, 주문접수됨, 조리시작됨, 배달시작됨 단계별 진행단계를 확인 할 수 있다
+ 
+![CQRS](https://user-images.githubusercontent.com/105857882/219086004-dd958415-948f-4516-9ad8-45b7c74e6cdc.PNG)
 
 # 3. Compensation / Correlation
+  주문 취소에 따른
 
 # 4. Deploy to EKS Cluster
 
