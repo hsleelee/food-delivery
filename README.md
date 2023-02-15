@@ -41,10 +41,24 @@
 ![CQRS](https://user-images.githubusercontent.com/105857882/219086004-dd958415-948f-4516-9ad8-45b7c74e6cdc.PNG)
 
 # 3. Compensation / Correlation
-  주문 취소에 따른
+  주문을 취소하면 스토어 주문이 취소되고 결재도 취소된다.
+  
+  ![주문취소](https://user-images.githubusercontent.com/105857882/219088783-a610b8c8-93be-4039-b86e-d569dbe9470d.PNG)
+
 
 # 4. Deploy to EKS Cluster
+  AWS user18-eks Cluster 에 front(앱), store(상점), rider(배달), customer(주문상태) 를 설치한다.
+
+
 
 # 5. Gateway & Service Router 설치
+  Gateway, 각 Service Router 설치 정보이다.
+  
+
 
 # 6. Autoscale (HPA)
+  front(앱)에 대해 autoscale 설정한 상태 정보이다.
+  
+  siege -c20 -t40S -v http://front:8080/orderLists 를 활용해 autoscale이 동작하는 모습이다.
+  
+  
