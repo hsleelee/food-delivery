@@ -71,6 +71,7 @@
 # 6. Autoscale (HPA)
   front(앱)에 대해 autoscale 설정한 상태 정보이다.
   
-  siege -c20 -t40S -v http://front:8080/orderLists 를 활용해 autoscale이 동작하는 모습이다.
+  
+  siege -c200 -t40S -v http://front:8080/orders 부하를 주어 autoscale이 동작하는 모습이다.
   
   
