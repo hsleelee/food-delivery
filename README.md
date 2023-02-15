@@ -71,6 +71,7 @@
 # 6. Autoscale (HPA)
   front(앱)에 대해 autoscale 설정한 상태 정보이다.
   
+  ![hpa01](https://user-images.githubusercontent.com/105857882/219136979-96461275-2e61-499a-9bc7-403653d5bcfe.PNG)
   
   siege -c200 -t40S -v http://front:8080/orders 부하를 주어 autoscale이 동작하는 모습이다.
   
