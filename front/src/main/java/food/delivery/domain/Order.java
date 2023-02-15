@@ -14,64 +14,28 @@ import java.util.Date;
 @Data
 
 public class Order  {
-
-
-    
+ 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    
-    
-    
-    
-    
+     
     private Long id;
-    
-    
-    
-    
-    
+     
     private String foodId;
-    
-    
-    
-    
-    
+     
     private String customerId;
-    
-    
-    
-    
-    
+     
     private String preference;
-    
-    
-    
-    
-    
+     
     private String options;
-    
-    
-    
+     
     @Embedded
     
-    private Address address;
-    
-    
-    
-    
-    
+    private String address;
+     
     private Long storeId;
-    
-    
-    
-    
-    
+     
     private Integer qty;
-    
-    
-    
-    
-    
+     
     private String status;
 
     @PostPersist
@@ -121,11 +85,12 @@ public class Order  {
 
     public static void updateStatus(Accepted accepted){
 
-        /** Example 1:  new item 
+        /** Example 1:  new item */
         Order order = new Order();
+
         repository().save(order);
 
-        */
+        
 
         /** Example 2:  finding and process
         
@@ -142,13 +107,13 @@ public class Order  {
     }
     public static void updateStatus(Rejected rejected){
 
-        /** Example 1:  new item 
+        /** Example 1:  new item  */
         Order order = new Order();
         repository().save(order);
 
-        */
+       
 
-        /** Example 2:  finding and process
+        /** Example 2:  finding and process 
         
         repository().findById(rejected.get???()).ifPresent(order->{
             
@@ -157,7 +122,7 @@ public class Order  {
 
 
          });
-        */
+       */
 
         
     }

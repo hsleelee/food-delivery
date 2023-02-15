@@ -92,11 +92,16 @@ public class StoreOrder  {
 
     public static void orderInfoTransfer(OrderPlaced orderPlaced){
 
-        /** Example 1:  new item 
+        /** Example 1:  new item  */
         StoreOrder storeOrder = new StoreOrder();
+        
+        storeOrder.setFoodId(orderPlaced.getFoodId());
+        storeOrder.setPreference(orderPlaced.getPreference());
+        storeOrder.setOrderId(orderPlaced.getId());
+        storeOrder.setStatus(orderPlaced.getStatus());
+        
         repository().save(storeOrder);
 
-        */
 
         /** Example 2:  finding and process
         
@@ -116,19 +121,17 @@ public class StoreOrder  {
         /** Example 1:  new item 
         StoreOrder storeOrder = new StoreOrder();
         repository().save(storeOrder);
-
-        */
-
-        /** Example 2:  finding and process
+       */
+      
+        /** Example 2:  finding and process */
         
-        repository().findById(orderCanceled.get???()).ifPresent(storeOrder->{
+        repository().findByOrderId(orderCanceled.getId()).ifPresent(storeOrder->{
             
-            storeOrder // do something
+            storeOrder.setStatus(orderCanceled.getStatus());
             repository().save(storeOrder);
-
-
+ 
          });
-        */
+       
 
         
     }

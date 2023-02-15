@@ -27,15 +27,10 @@ public class PolicyHandler{
 
         OrderPlaced event = orderPlaced;
         System.out.println("\n\n##### listener OrderInfoTransfer : " + orderPlaced + "\n\n");
-
-
-        
-
+  
         // Sample Logic //
         StoreOrder.orderInfoTransfer(event);
-        
-
-        
+         
 
     }
 

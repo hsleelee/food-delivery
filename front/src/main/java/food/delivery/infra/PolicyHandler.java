@@ -29,9 +29,7 @@ public class PolicyHandler{
         Rejected event = rejected;
         System.out.println("\n\n##### listener CancelPayment : " + rejected + "\n\n");
 
-
-        
-
+ 
         // Sample Logic //
         Payment.cancelPayment(event);
         
@@ -44,9 +42,7 @@ public class PolicyHandler{
 
         OrderCanceled event = orderCanceled;
         System.out.println("\n\n##### listener CancelPayment : " + orderCanceled + "\n\n");
-
-
-        
+ 
 
         // Sample Logic //
         Payment.cancelPayment(event);

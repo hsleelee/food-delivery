@@ -89,16 +89,15 @@ public class Payment  {
 
         */
 
-        /** Example 2:  finding and process
+        /** Example 2:  finding and process */
         
-        repository().findById(orderCanceled.get???()).ifPresent(payment->{
+        repository().findByOrderId(orderCanceled.getId()).ifPresent(payment->{
             
-            payment // do something
+            payment.setStatus("orderCanceled"); // do something
             repository().save(payment);
-
-
+  
          });
-        */
+        
 
         
     }
