@@ -33,6 +33,7 @@
 # 1. Saga (Pub / Sub)
  주문이 완료되면 상점주인에게 주문 내역이 전송된다
  
+ ![주문정보](https://user-images.githubusercontent.com/105857882/219085248-a20c38bd-1139-4b59-9b1a-18c7803bcba0.PNG)
  
 # 2. CQRS
 
