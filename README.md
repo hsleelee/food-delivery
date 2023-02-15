@@ -35,16 +35,28 @@
  
  ![주문정보](https://user-images.githubusercontent.com/105857882/219085248-a20c38bd-1139-4b59-9b1a-18c7803bcba0.PNG)
  
+ ![order01](https://user-images.githubusercontent.com/105857882/219126065-46aab0e0-a3f3-4c23-93d1-ba45b1dc6a58.PNG)
+
+![store01](https://user-images.githubusercontent.com/105857882/219126160-68c6c241-3e0f-4629-9572-f4fdd42110a9.PNG)
+
+![pub_sub01](https://user-images.githubusercontent.com/105857882/219126214-3036c9b5-f0bc-488b-a56a-40bf5effc1fb.PNG)
+
 # 2. CQRS
  주문상태가 주문됨, 주문접수됨, 조리시작됨, 배달시작됨 단계별 진행단계를 확인 할 수 있다
  
 ![CQRS](https://user-images.githubusercontent.com/105857882/219086004-dd958415-948f-4516-9ad8-45b7c74e6cdc.PNG)
+
+![CQRS01](https://user-images.githubusercontent.com/105857882/219125697-c8a6e415-cafb-45aa-b787-3c59105577a3.PNG) 
+
+![CQRS02](https://user-images.githubusercontent.com/105857882/219125913-ab25c4de-2c0e-47f6-af9a-c8691572f122.PNG)
 
 # 3. Compensation / Correlation
   주문을 취소하면 스토어 주문이 취소되고 결재도 취소된다.
   
   ![주문취소](https://user-images.githubusercontent.com/105857882/219088783-a610b8c8-93be-4039-b86e-d569dbe9470d.PNG)
 
+   Compensation / Correlation 주문 및 취소 결과 kafka console 로그
+  ![Compensation](https://user-images.githubusercontent.com/105857882/219126416-a1c49171-0a07-4b3a-bc9b-e49c26fafc4e.PNG)
 
 # 4. Deploy to EKS Cluster
   AWS user18-eks Cluster 에 front(앱), store(상점), rider(배달), customer(주문상태) 를 설치한다.
