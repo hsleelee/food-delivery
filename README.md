@@ -31,3 +31,16 @@
 6. Autoscale (HPA)
 
 # 1. Saga (Pub / Sub)
+ 주문이 완료되면 상점주인에게 주문 내역이 전송된다
+ 
+ 
+# 2. CQRS
+
+
+# 3. Compensation / Correlation
+
+# 4. Deploy to EKS Cluster
+
+# 5. Gateway & Service Router 설치
+
+# 6. Autoscale (HPA)
