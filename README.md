@@ -61,17 +61,21 @@
 # 4. Deploy to EKS Cluster
   AWS user18-eks Cluster 에 front(앱), store(상점), rider(배달), customer(주문상태) 를 설치한다.
 
-
+![deploy](https://user-images.githubusercontent.com/105857882/219135145-24b255e9-e120-4ff9-93cb-9cb710198952.PNG)
 
 # 5. Gateway & Service Router 설치
   Gateway, 각 Service Router 설치 정보이다.
   
-
+ ![gateway](https://user-images.githubusercontent.com/105857882/219135226-a278f659-2945-4532-a8b7-b63ebbffeb36.PNG)
 
 # 6. Autoscale (HPA)
   front(앱)에 대해 autoscale 설정한 상태 정보이다.
   
   
   siege -c200 -t40S -v http://front:8080/orders 부하를 주어 autoscale이 동작하는 모습이다.
+  
+  ![hpa02](https://user-images.githubusercontent.com/105857882/219135298-78a9bf04-0284-42bb-ac61-b9773a9f48ea.PNG)
+  
+  ![hpa_pods](https://user-images.githubusercontent.com/105857882/219135385-63efe9e3-ffbe-4855-9878-fd552da2e459.PNG)
   
   
